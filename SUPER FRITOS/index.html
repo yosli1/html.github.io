@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Fritos</title>
+    
+    <style>
+        /* ESTILOS PARA EL MENÚ EN HILERA */
+        .lista-menu {
+            display: flex;              /* Esto los pone en fila */
+            justify-content: space-around; /* Los separa equitativamente */
+            list-style: none;           /* Quita los puntos */
+            padding: 10px;
+            margin: 0;
+            border: 2px solid black;    /* Recuadro como el dibujo */
+        }
+
+        .lista-menu li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        /* DISEÑO DE CABECERA (LOGO Y TÍTULO) */
+        .top-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 5px;
+            gap: 20px;
+        }
+
+        /* DISEÑO DE COLUMNAS (Misión, Tienda, Imagen, Contacto) */
+        .seccion-medio {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .columna {
+            border: 2px solid black;
+            padding: 10px;
+            flex: 1; /* Hace que todas midan lo mismo */
+        }
+
+        /* DISEÑO DEL CUERPO (BANNER DE EMPANADAS) */
+        .banner-principal {
+            border: 2px solid black;
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        footer {
+            border-top: 2px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-header">
+        <img src="IMG/empanadas.jpg" alt="Logo" width="80">
+        <h1>Super Fritos</h1>
+    </header>
+
+    <nav class="menu-bar">
+        <ul class="lista-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#conoce">Conoce Super Fritos</a></li>
+            <li><a href="tienda.html">Tienda virtual</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="seccion-medio">
+        <div class="columna">
+            <h3>Nosotros</h3>
+            <p>Misión<br>Visión<br>Historia<br>Política</p>
+        </div>
+        <div class="columna">
+            <h3>Tienda</h3>
+            <p>Catálogos<br>Productos<br>Haga su pedido</p>
+        </div>
+        <div class="columna">
+            <img src="IMG/empanadass.jpg" alt="Fritos" width="100%">
+        </div>
+        <div class="columna">
+            <h3>Contacto</h3>
+            <p>Teléfono<br>WhatsApp<br>Correo</p>
+        </div>
+    </div>
+
+    <main class="banner-principal">
+        <img src="IMG/descarga.jpg" alt="Imagen 1" width="120">
+        <p><b>Las empanadas y fritos más ricos de Barranca campo galán.</b></p>
+        <img src="IMG/arepa.jpg" alt="Imagen 2" width="120">
+    </main>
+
+    <footer>
+        <img src="IMG/facebook.jpg" width="25">
+        <img src="IMG/images.jpg" width="25">
+        <img src="IMG/whatsapp.webp" width="25">
+        <p>&copy; Yoslibeth Sofía Tolosa Rodriguez - Proyecto ADSO 2026</p>
+    </footer>
+
+</body>
+</html>
